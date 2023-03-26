@@ -1,6 +1,7 @@
 //Anagram means two string conatin same letter with same frequency.
 import java.lang.reflect.Array;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Anagram_naiveSolution {
     static boolean checkAnagram(String s1, String s2) {
@@ -17,7 +18,11 @@ public class Anagram_naiveSolution {
     }
 
     public static void main(String[] args) {
-
-        System.out.println(checkAnagram("aacbd","cbada"));
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter first string : ");
+        String str1=sc.nextLine();
+        System.out.print("Enter second string : ");
+        String str2=sc.nextLine();
+        System.out.println(checkAnagram(str1,str2));
     }
 }
